@@ -1,0 +1,31 @@
+body {
+      font-family: Arial;
+      background-color: #878787;
+    }
+    .container {
+      width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #00dbe7;
+      border: 2px solid black;
+    }
+    h2 {
+      text-align: center;
+      color: white;
+      background-color: blue;
+      padding: 10px;
+    }
+    table {
+      width: 100%;
+    }
+    td {
+      padding: 5px;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+    }
+    .btn {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Form Pemesanan Barang</h2>
+    <table>
+      <tr>
+        <td>Kode Barang</td>
+        <td><input type="text" id="kodeBarang"></td>
+        <td><button onclick="cariBarang()">Cari</button></td>
+      </tr>
+      <tr>
+        <td>Nama Barang</td>
+        <td colspan="2"><input type="text" id="namaBarang" readonly></td>
+      </tr>
+      <tr>
+        <td>Harga Barang</td>
+        <td colspan="2"><input type="text" id="hargaBarang" readonly></td>
+      </tr>
+      <tr>
+        <td>Jumlah Barang</td>
+        <td><input type="number" id="jumlahBarang"></td>
+        <td><button onclick="hitung()">Hitung</button></td>
+      </tr>
+      <tr>
+        <td>Total Harga</td>
+        <td colspan="2"><input type="text" id="totalHarga" readonly></td>
+      </tr>
+      <tr>
+        <td>Diskon</td>
+        <td colspan="2"><input type="text" id="diskon" readonly></td>
+      </tr>
+      <tr>
+        <td>Total Bayar</td>
+        <td colspan="2"><input type="text" id="totalBayar" readonly></td>
+      </tr>
+      <tr>
+        <td colspan="3"><button onclick="window.print()" class="btn">Cetak</button></td>
+      </tr>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
