@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #0461af;
+    color: ghostwhite;
+    text-align: center;
+    padding: 20px;
+}
+
+.header div {
+    font-size: 36pt;
+}
+
+.header small {
+    font-size: 16pt;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.footer {
+    background-color: #0461af;
+    color: ghostwhite;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.sidebar, .right-sidebar {
+    width: 20%;
+    background-color: darkgray;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar table {
+    width: 100%;
+    background-color: yellow;
+    border-collapse: collapse;
+}
+
+.sidebar .title-menu {
+    background-color: #0461af;
+    color: white;
+}
+
+.sidebar td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.sidebar td a {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 8px;
+    border: 1px solid #aaa;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.sidebar td a:hover {
+    background-color: #ddd;
+    transform: translateY(-1px);
+}
+
+.developer {
+    font-size: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.main-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.right-sidebar {
+    text-align: center;
+}
+
+.right-sidebar img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.right-sidebar a {
+    display: block;
+    margin: 5px 0;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
