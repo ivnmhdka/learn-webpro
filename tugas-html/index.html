@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Web V1</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            background-color: #0461af;
+            color: ghostwhite;
+            text-align: center;
+        }
+        .header {
+            padding: 20px;
+        }
+        .header small {
+            font-size: 14px;
+        }
+        .footer {
+            padding: 10px;
+            font-size: 12px;
+        }
+        .container {
+            display: flex;
+            height: 400px;
+        }
+        .sidebar, .right-sidebar {
+            width: 20%;
+            background-color: darkgray;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .sidebar table {
+            width: 100%;
+            background-color: yellow;
+            border-collapse: collapse;
+        }
+        .sidebar .title-menu {
+            background-color: #0461af;
+            color: white;
+            font-weight: bold;
+        }
+        .sidebar td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .developer {
+            font-size: 10px;
+            color: white;
+            margin-top: 10px;
+        }
+        .main-content {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .main-content iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .right-sidebar {
+            text-align: center;
+        }
+        .right-sidebar img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+        .right-sidebar a {
+            display: block;
+            margin: 5px 0;
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>PEMROGRAMAN WEB DASAR</div>
+        <small>Topik HTML, PHP, MySQL</small>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <table>
+                <tr><td class="title-menu">Menu</td></tr>
+                <tr><td><a href="menu1.html" target="konten">Menu 1</a></td></tr>
+                <tr><td><a href="menu2.html" target="konten">Menu 2</a></td></tr>
+                <tr><td><a href="menu3.html" target="konten">Menu 3</a></td></tr>
+                <tr><td><a href="menu4.html" target="konten">Menu 4</a></td></tr>
+                <tr><td><a href="menu5.html" target="konten">Menu 5</a></td></tr>
+                <tr><td><a href="menu6.html" target="konten">Menu 6</a></td></tr>
+            </table>
+            <p class="developer">Dikembangkan oleh: Ivan Mahadika Yanuarizqi<br>&copy;2025</p>
+        </div>
+        <div class="main-content">
+            <iframe name="konten" src="welcome.html"></iframe>
+        </div>
+        <div class="right-sidebar">
+            <img src="telyu.png" alt="logo telkom university">
+            <a href="#">Link 1</a><br>
+            <a href="#">Link 2</a><br>
+            <a href="#">Link 3</a><br>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Pemrograman Web Dasar</p>
+    </div>
+</body>
+</html>
