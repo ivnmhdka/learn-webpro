@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+.form-box {
+    width: 450px;
+    background-color: yellow;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.form-box h2 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    width: 130px;
+    margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+    flex: 1;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="submit"],
+.form-group input[type="button"] {
+    width: auto;
+    margin-left: 10px;
+}

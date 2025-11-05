@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Penjualan Barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <form method="POST" action="proses.php">
+        <div class="form-box">
+            <h2>FORM PENJUALAN BARANG</h2>
+
+            Kode Barang:
+            <input type="text" name="kode" value="">
+            <input type="submit" name="cari" value="Cari"><br><br>
+
+            Nama Barang:
+            <input type="text" name="nama" value=""><br><br>
+
+            Harga Barang:
+            <input type="text" name="harga" value=""><br><br>
+
+            Jumlah Barang:
+            <input type="number" name="jumlah" value=""><br><br>
+
+            Metode Bayar:
+            <select name="metode">
+                <option value="Cash">Cash</option>
+                <option value="Kredit">Kredit</option>
+            </select>
+            <input type="submit" name="proses" value="Proses"><br><br>
+
+            Total Harga:
+            <input type="text" name="totalHarga" value=""><br><br>
+
+            Diskon:
+            <input type="text" name="diskon" value=""><br><br>
+
+            Total Bayar:
+            <input type="text" name="totalBayar" value=""><br><br>
+
+            <input type="button" value="Cetak" onclick="window.print()">
+        </div>
+    </form>
+    </center>
+</body>
+</html>
