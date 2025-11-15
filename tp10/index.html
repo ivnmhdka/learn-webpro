@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Sapa Menggunakan AJAX dan PHP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f6fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #respon {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    .waiting {
+      color: #999;
+    }
+  </style>
+
+  <script>
+    function kirimData() {
+      const nama = document.getElementById("nama").value;
+      const respon = document.getElementById("respon");
+      respon.innerHTML = "Menunggu input...";
+      respon.className = "waiting";
+
+      const xhr = new XMLHttpRequest();
+      xhr.open("POST", "server.php", true);
+      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+      xhr.onload = function () {
+        if (this.status === 200) {
+          respon.innerHTML = this.responseText;
+        }
+      };
+
+      xhr.send("nama=" + encodeURIComponent(nama));
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Form Sapa Menggunakan AJAX dan PHP</h2>
+
+    <label for="nama">Masukkan Nama Anda:</label>
+    <input type="text" id="nama" placeholder="Contoh: Alex">
+
+    <button onclick="kirimData()">Kirim</button>
+
+    <h3>Respon Server:</h3>
+    <div id="respon" class="waiting">Menunggu input...</div>
+  </div>
+</body>
+</html>
